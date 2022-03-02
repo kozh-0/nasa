@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@400;700&display=swap');
+$bg-link: 'https://i.imgflip.com/48sq6r.png';
+
+.start {
+    
+    padding-top: 22%;
+    display: flex;
+    justify-content: center;
+    font-size: 90px;
+    font-weight: 700;
+    @media (max-width: 560px) {
+        font-size: 50px;
+    }
+    a {
+        color: #e81212;
+        text-decoration: none;
+    }
+    transition: 0.5s ease-in-out;
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+main {
+    height: 100vh;
+}
+
+body {
+    font-family: 'Smooch Sans', sans-serif;
+    height: 100vh;
+    padding: 7px;
+    background: url($bg-link) center;
+    background-size: cover;
+    color: whitesmoke;
+    h1 {
+        margin: 0;
+        padding: 5px 0;
+    }
+    img {
+        display: block;
+        margin: 0px auto;
+        max-width: 630px;
+        @media (max-width: 883px) {
+            width: 100%;
+        }
+    }
+}
+
+.pic {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    
+    .descr {
+        padding: 50px;
+        font-size: 23px;
+        p {font-weight: 600;}
+        h1, h5 {
+            color:#e81212;
+        }
+    }
+    @media (max-width: 1150px){
+        display: block;
+        .descr {
+            padding: 0;
+        }
+    }
+}
+.back {
+    display: inline-block;
+    color: aqua;
+    text-decoration: none;
+    font-size: 35px;
+    transition: transform 0.5s ease-in-out;
+    &:hover {
+        transform: scale(1.2);
+    }
+    padding-bottom: 20px;
+}
