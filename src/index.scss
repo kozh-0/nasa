@@ -31,9 +31,9 @@ main {
 }
 
 body {
+    margin: 0;
     font-family: 'Smooch Sans', sans-serif;
     height: 100vh;
-    padding: 7px;
     background: url($bg-link) center;
     background-size: cover;
     color: whitesmoke;
@@ -81,4 +81,8 @@ body {
         transform: scale(1.2);
     }
     padding-bottom: 20px;
+}
+
+.nasa-page {
+    padding: 12px;
 }

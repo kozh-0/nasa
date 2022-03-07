@@ -14,7 +14,7 @@ export default function NasaPhoto() {
 
     const {explanation, date, url, title, media_type} = data;
     return (
-        <>
+        <section className="nasa-page">
             {data.title ? (
                 <>
                     <div className="pic">
@@ -32,6 +32,6 @@ export default function NasaPhoto() {
                     <Link className="back" to="/">Back</Link>
                 </>
             ) : <h1>Loading...</h1>}
-        </>
+        </section>
     )
 }
